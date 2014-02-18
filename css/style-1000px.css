@@ -1,5 +1,5 @@
 /*
-	Prologue 1.2 by HTML5 UP
+	Miniport 2.5 by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -8,34 +8,43 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body,input,textarea,select
+	body
 	{
-		font-size: 17pt;
+		font-size: 11pt;
 	}
-	
+
 /*********************************************************************************/
-/* Header                                                                        */
+/* Wrappers                                                                      */
 /*********************************************************************************/
 
-	#header
+	.wrapper
 	{
-		width: 300px;
+		padding: 5em 0 5em 0;
+		text-align: center;
 	}
 	
+		.wrapper-first
+		{
+			padding-top: 9em;
+		}
+
+		.wrapper-style4 .row-special
+		{
+			margin: 2em 0 0 0;
+			padding: 2em 0 2em 0;
+		}
+
 /*********************************************************************************/
-/* Footer                                                                        */
+/* Articles                                                                      */
 /*********************************************************************************/
 
-	#footer
+	#top
 	{
-		margin-left: 300px;
 	}
-	
-/*********************************************************************************/
-/* Main                                                                          */
-/*********************************************************************************/
 
-	#main
-	{
-		margin-left: 300px;
-	}
+		#top .me
+		{
+			width: 19.5em;
+			height: 19.5em;
+			margin: 0;
+		}
