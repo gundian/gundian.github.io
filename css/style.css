@@ -53,12 +53,12 @@
 	strong, b
 	{
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #d73c2c;
 	}
 	
 	h1, h2, h3, h4, h5, h6
 	{
-		color: #3e3e3e;
+		color: #d73c2c;
 	}
 	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
@@ -912,7 +912,7 @@
 
 	#nav
 	{
-		background-color: #282828;
+		background-color: #3B95C6;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -1006,3 +1006,84 @@
 		{
 			color: #777;
 		}
+		
+/*********************************************************************************/
+/* Copy                                                                 */
+/*********************************************************************************/		
+#spotify {
+	color:#fff;
+	height:200px;
+	min-width:200px;
+	overflow:hidden;
+	position: relative;
+	/*background-color: #fff;*/
+	z-index: 10;
+	
+}		
+
+.spotify-product {
+	position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.spotify-product:hover {
+  -webkit-transform: translateY(-35px);
+  transform: translateY(-35px);
+}
+#spotify-cinetalk {
+	margin: 0 auto;
+	z-index: 100;
+	width: 200px;
+	height: 200px;
+
+	background-image: url(../images/cinetalk.png);
+	background-repeat: no-repeat;
+	/*background-size: 602px 681px;*/
+	left: 20%; right: 50%; bottom: -30px;
+
+}
+#spotify-salesflow {
+	margin: 0 auto;
+	z-index: 100;
+	width: 200px;
+	height: 200px;
+
+	background-image: url(../images/portfolio01.jpg);
+	background-repeat: no-repeat;
+	/*background-size: 602px 681px;*/
+	left: 20%; right: 50%; bottom: -30px;
+
+}
+
+
+
+
+
+#logo {
+	background:url(../images/me1photo.jpg) no-repeat 0 0;
+	width:87px;
+	height:85px;
+	text-indent:-999em;
+	margin-top: 97px;
+	display: inline-block;
+	position: relative;
+}
+
+#logo .frame {
+	position: absolute;
+	left: -8px; top: -8px;
+	background: url(../images/ta-frame.png) no-repeat 0 0;
+	width: 103px;
+	height: 101px;
+
+	-webkit-transform:scale(0.8);
+	transform: scale(0.8);
+	
+	-webkit-transition: all 0.25s ease-in-out 0s;
+	transition: all 0.25s ease-in-out 0s;
+}
+
+#logo:hover .frame {
+	-webkit-transform:scale(1);
+	transform: scale(1);
+}
