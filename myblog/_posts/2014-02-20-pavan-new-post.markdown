@@ -7,7 +7,7 @@ description: This is how i installed Jekyll blog on my github pages
 title: Issues i faced while installing Jekyll blog for GitHub
 ---
  
-![My helpful screenshot]({{site.url}}/assets/jekyll.png)
+![My helpful screenshot]({{site.url}}/myblog/assets/jekyll.png)
 
 So far I meant blogging means Wordpress or blogspot which provides easy to use user interfaces, blog posts, edits and you can provide keywords and you can optimize your blog for SEO. Still i run couple of sites using wordpress though.
 
