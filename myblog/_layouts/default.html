@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+<title>
+{{site.main_title}} - {{page.title}}
+</title>
+
+{% if page.description %}
+<meta name="description" content="{{page.description}}" />
+{% else %}
+<meta name="description" content="{{site.description}}" />
+{% endif %}
+
+{% if page.keywords %}
+<meta name="keywords" content="{{page.keywords | join: ','}}" />
+{% else %}
+<meta name="keywords" content="{{site.keywords | join: ','}}" />
+{% endif %}
+
+{% if page.date %}
+<meta http-equiv="date" content="{{page.date |date: '%A, %d  %Y %H:%M:%S GMT'}}" />
+{% endif %}
+
+<meta name="robots" content="{{page.index}}INDEX,{{page.follow}}FOLLOW" />
+
+
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-48295105-1', 'kpavan.com');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <!--<h1 class="title"><a href="/">{{ site.name }}</a></h1>-->
+            <h1 class="title"><a href="/">Home</a></h1>
+            <!--<a class="extra" href="/">home</a>-->
+          </div>
+
+          {{ content }}
+<!--https://twitter.com/intent/tweet?text=Easy%20Peasy%20Equal%20Heights&url=http://benhowdle.im/2014/01/29/easy-peasy-equal-heights/&via=benhowdle-->
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Categories<br />
+                Keywords<br />
+                Tweet This Link<br />
+                Follow me in Twitter<br />
+                
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                {{page.categories}}<br />
+                {{page.keywords}}<br />
+                <a href="https://twitter.com/intent/tweet?text={{page.title}}&url=kpavan.com/blog{{page.url}}">Click Here to tweet</a><br />
+                <a href="https://twitter.com/pawanchowdary">twitter</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

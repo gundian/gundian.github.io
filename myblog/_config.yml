@@ -1,0 +1,8 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
+destination: _deploy
+description: "Pavan Kothapalli's Blog | SAP Mobility with Odata and MBO | HTML5 apps using Sencha Touch"
+keywords: SAP Mobility with OData, SAP Mobility with MBO and Sencha Touch and HTML5
+main_title: "Pavan Kothapalli Blog"
+
