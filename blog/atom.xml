@@ -1,31 +1,136 @@
----
-layout: nil
----
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
   <title>www.kpavan.com/blog</title>
   <link href="http://www.kpavan.com/blog/"/>
   <link type="application/atom+xml" rel="self" href="http://www.kpavan.com/blog/atom.xml"/>
-  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <updated>2014-02-27T15:50:58-06:00</updated>
   <id>http://www.kpavan.com/blog/</id>
   <author>
     <name>Pavan Kothapalli</name>
     <email>pavan.chow@gmail.com</email>
   </author>
 
-  {% for post in site.posts %}
+  
   <entry>
-    <id>http://www.kpavan.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://www.kpavan.com/blog{{ post.url }}"/>
-    <title>{{ post.title | xml_escape }}</title>
-    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <id>http://www.kpavan.com/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp</id>
+    <link type="text/html" rel="alternate" href="http://www.kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp.html"/>
+    <title>What you need to know about SMP 3.0, Roadmap for SAP Mobility.</title>
+    <updated>2014-02-25T20:05:26Z</updated>
     <author>
       <name>Pavan Kothapalli</name>
       <uri>http://www.kpavan.com/blog/</uri>
     </author>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;http://wiki.scn.sap.com/wiki/download/attachments/332333549/SMP_TITLE.png?version=1&amp;amp;modificationDate=1367253119000&amp;amp;api=v2&quot; alt=&quot;Learn about SMP 3.0 and OData&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I was working with SUP 2.1.x and 2.2 all along and build some MBO based HWC Applications, as Sybase mentioned MBO based applications are less critical business tasks, and easy to implemet situations like work flow approvals, leave requests.&lt;/p&gt;
+
+&lt;p&gt;SAP has changed the way of approach with their new SMP 2.3, they seems like more focused on OData approach with the combination of NetWeaver Gateway, while they support the MBO based applications still, which will allow old SUP users to continue their HWC applications and they make use OData protocal applications for better and robust solutions. Even with SMP 2.3 we had limited Push support while there is no off-line capability at that time.&lt;/p&gt;
+
+&lt;p&gt;Now, with their recent release SMP 3.0, seems everything has been changed. &lt;/p&gt;
+
+&lt;p&gt;The Differences i see between SUP 2.2 , SMP 2.3 and SMP 3.0&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;with &lt;code&gt;SMP 3.0&lt;/code&gt; release, there is no SCC &lt;code&gt;Sybase Control center&lt;/code&gt;, so we kind of lost of the features we used as a SCC Administrator.&lt;/li&gt;
+&lt;li&gt;SMP 3.0 comes with total refreshing look, as the Admin console it self deigned in HTML5 as old SCC used Flex.&lt;/li&gt;
+&lt;li&gt;With &lt;code&gt;SMP 3.0&lt;/code&gt;, now the developers have more choices to choose from, Native vs Hybrid development of the front end apps.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;AppBuilder&lt;/code&gt;, is the new web based GUI Tool, with all drag and drop features and it comes with Cordova bundle and Kapsel bundle so developers can more focus on their business and application process, instead of worry about Device APIs, as cordova covers that part for us. for more information click &lt;a href=&quot;http://www.sapmobileacademy.com/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Here is one Sample application you can build using AppBuilder / SMP 3.0 with in 30 minutes, as a developer you will understand all the components in the ViewPort and how to use, even you can add controllers to it. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://scn.sap.com/servlet/JiveServlet/downloadImage/327361/image046.png&quot; alt=&quot;Sample application using AppBuilder&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Check the details &lt;a href=&quot;http://scn.sap.com/docs/DOC-49170&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for visiting &lt;a href=&quot;http://kpavan.com/blog&quot;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+</content>
   </entry>
-  {% endfor %}
+  
+  <entry>
+    <id>http://www.kpavan.com/how-to/2014/02/20/pavan-new-post</id>
+    <link type="text/html" rel="alternate" href="http://www.kpavan.com/blog/how-to/2014/02/20/pavan-new-post.html"/>
+    <title>Issues i faced while installing Jekyll blog for GitHub</title>
+    <updated>2014-02-20T21:48:26Z</updated>
+    <author>
+      <name>Pavan Kothapalli</name>
+      <uri>http://www.kpavan.com/blog/</uri>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/blog/assets/jekyll.png&quot; alt=&quot;My helpful screenshot&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;So far I meant blogging means Wordpress or blogspot which provides easy to use user interfaces, blog posts, edits and you can provide keywords and you can optimize your blog for SEO. Still i run couple of sites using wordpress though.&lt;/p&gt;
+
+&lt;p&gt;ever since I found Github Pages and Git blog using Jekyll I really wanted to implement my own Github Page and Blog with Jekyll.&lt;/p&gt;
+
+&lt;p&gt;There are lot of sites showing how easily you can implement Github blog with Jekyll, but i ran into some issue while implemnting this Jekyll blog, but i finally made one blog on Github.&lt;/p&gt;
+
+&lt;p&gt;How to implement Jekyll blog is easily demonstrated &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you ran into any issues while implementing Jekyll blog like me, then this post might sounds interesting for you&lt;/p&gt;
+
+&lt;p&gt;Here are the issues i faced and how i solved&lt;/p&gt;
+
+&lt;p&gt;Issue 1:
+first check &lt;code&gt;ruby -v&lt;/code&gt;
+Issue the command &lt;code&gt;gem install jekyll&lt;/code&gt;
+after a while I got this error message&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;ss&quot;&gt;ERROR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;While&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;executing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Gem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;FilePermissionError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;don&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;permissions&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/Library/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Ruby&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Gems&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;directory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This means you dont have your own local copy of &lt;code&gt;ruby&lt;/code&gt;, by default every mac will come with pre-installed ruby for its own internal purpose.
+to come over this you can install your own ruby enviornment using RVM, there is another way using rbenv, but myself i prefer to use &lt;a href=&quot;https://rvm.io/&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;once you install &lt;code&gt;ruby&lt;/code&gt;, then you can continue with your installation.&lt;/p&gt;
+
+&lt;p&gt;Issue 2:
+At the of installation, I got this message&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;  &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;WARNING&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;~/.profile&amp;#39;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;might&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;want&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;load&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;it&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;following&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;/Users/pavankothapalli/.bash_profile&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+      &lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/.profile&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Thought this mac installation really driving me crazy, but it&amp;#39;s so simple. just update the .bash_profile file with &lt;code&gt;source ~/.profile&lt;/code&gt;. In this way every time console opens it will load the path parameters.&lt;/p&gt;
+
+&lt;p&gt;That&amp;#39;s all ... your awesome blog is live.&lt;/p&gt;
+
+&lt;p&gt;Welcome to MyBlog!&lt;/p&gt;
+
+&lt;p&gt;Thanks for visiting &lt;a href=&quot;http://kpavan.com&quot;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;BookMark : /how-to/2014/02/20/pavan-new-post&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <id>http://www.kpavan.com/jekyll/update/2014/02/20/welcome-to-jekyll</id>
+    <link type="text/html" rel="alternate" href="http://www.kpavan.com/blog/jekyll/update/2014/02/20/welcome-to-jekyll.html"/>
+    <title>Welcome to Jekyll!</title>
+    <updated>2014-02-20T21:25:26Z</updated>
+    <author>
+      <name>Pavan Kothapalli</name>
+      <uri>http://www.kpavan.com/blog/</uri>
+    </author>
+    <content type="html">&lt;p&gt;You&amp;#39;ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
+To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;PAVAN&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&amp;#39;s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  
  
 </feed>
