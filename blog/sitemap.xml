@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://kpavan.com/blog</loc>
+    <lastmod>2014-02-25T20:05:26Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+
   
   <url>
     <loc>http://kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp.html</loc>
-    
     <lastmod>2014-02-25T20:05:26Z</lastmod>
-    
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://kpavan.com/blog/how-to/2014/02/20/pavan-new-post.html</loc>
-    
     <lastmod>2014-02-20T21:48:26Z</lastmod>
-    
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://kpavan.com/blog/jekyll/update/2014/02/20/welcome-to-jekyll.html</loc>
-    
     <lastmod>2014-02-20T21:25:26Z</lastmod>
-    
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.5</priority>
   </url>
   
   
