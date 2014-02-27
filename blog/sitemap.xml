@@ -7,7 +7,7 @@ layout: nil
   <url>
     <loc>http://kpavan.com{{site.url}}</loc>
 
-       <loc> {{post.url}}  </loc>
+       <loc>http://kpavan.com{{post.url}}  </loc>
     {% if post.lastmod == null %}
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     {% else %}
