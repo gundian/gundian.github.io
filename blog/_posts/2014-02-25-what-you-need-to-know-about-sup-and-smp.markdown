@@ -32,7 +32,7 @@ Check the details [here][scnlink]
 
 Thanks for visiting [my blog][kpavan]
 
-BookMark : {{ site.baseurl }} {{page.id}}
+BookMark : {{site.baseurl}} {{"/blog"}} {{page.id}}
 
 [scnlink]: http://scn.sap.com/docs/DOC-49170
 [sapacademy]: http://www.sapmobileacademy.com/
