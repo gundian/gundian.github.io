@@ -6,104 +6,9 @@
     <atom:link href="http://kpavan.com/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Mon, 03 Mar 2014 23:33:32 +0000</pubDate>
-    <lastBuildDate>Mon, 03 Mar 2014 23:33:32 +0000</lastBuildDate>
+    <pubDate>Mon, 03 Mar 2014 23:36:51 +0000</pubDate>
+    <lastBuildDate>Mon, 03 Mar 2014 23:36:51 +0000</lastBuildDate>
 
-    
-    
-    <item>
-      <title>test post</title>
-      <link>http://kpavan.com/2014/03/03/testpost/</link>
-      <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
-      <author></author>
-      <guid>http://kpavan.com/2014/03/03/testpost</guid>
-      <description>&lt;p&gt;Incorporated provides a great typography, responsive design, author details, semantic markup and more.&lt;/p&gt;
-
-&lt;p&gt;You can set customize post covers, and other things directly in the post front matter:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;yaml&#39;&gt;&lt;span class=&#39;l-Scalar-Plain&#39;&gt;layout&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;post&lt;/span&gt;
-
-&lt;span class=&#39;l-Scalar-Plain&#39;&gt;title&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;Jekyll Incorporated Features&lt;/span&gt;
-&lt;span class=&#39;l-Scalar-Plain&#39;&gt;subtitle&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;What&amp;#39;s&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;in&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;the&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;box&amp;quot;&lt;/span&gt;
-
-&lt;span class=&#39;c1&#39;&gt;# Setup post cover image in /images/&lt;/span&gt;
-&lt;span class=&#39;l-Scalar-Plain&#39;&gt;cover_image&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;blog-cover.jpg&lt;/span&gt;
-
-&lt;span class=&#39;l-Scalar-Plain&#39;&gt;excerpt&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;Incorporated&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;provides&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;a&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;great&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;typography,&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;responsive&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;design,&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;author&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;details,&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;semantic&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;markup&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;and&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;more.&amp;quot;&lt;/span&gt;
-
-&lt;span class=&#39;c1&#39;&gt;# Author details, including Google Plus authorship&lt;/span&gt;
-&lt;span class=&#39;l-Scalar-Plain&#39;&gt;author&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;name&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;Karri Saarinen&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;twitter&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;karrisaarinen&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;gplus&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;100687498195339762535&lt;/span&gt; 
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;bio&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;Co-founder, Design&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;image&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;ks.jpg&lt;/span&gt;
-  
-&lt;span class=&#39;c1&#39;&gt;# Keep it as draft, not published in index.html or feed.xml&lt;/span&gt;
-&lt;span class=&#39;l-Scalar-Plain&#39;&gt;draft&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id=&quot;configurable__code_snipped_highlighting&quot;&gt;Configurable &amp;amp; Code Snipped Highlighting&lt;/h4&gt;
-
-&lt;p&gt;/assets/stylesheets/main.scss:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;scss&#39;&gt;&lt;span class=&#39;cm&#39;&gt;/* Bodytext font */&lt;/span&gt;
-&lt;span class=&#39;nv&#39;&gt;$font&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Droid Sans&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Helvetica Neue&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;Helvetica&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;Arial&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;sans-serif&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
-
-&lt;span class=&#39;cm&#39;&gt;/* Font for headings */&lt;/span&gt;
-&lt;span class=&#39;nv&#39;&gt;$fontheadings&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Droid Sans&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;s2&#39;&gt;&amp;quot;Helvetica Neue&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;Helvetica&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;Arial&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;sans-serif&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
-
-&lt;span class=&#39;cm&#39;&gt;/* Text colors */&lt;/span&gt;
-&lt;span class=&#39;nv&#39;&gt;$text&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;#21272d&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
-&lt;span class=&#39;nv&#39;&gt;$textmuted&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;#848484&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;
-&lt;span class=&#39;nv&#39;&gt;$accent&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;mh&#39;&gt;#2077b2&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;;&lt;/span&gt;    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;config.yml:&lt;/p&gt;
-&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;yaml&#39;&gt;&lt;span class=&#39;l-Scalar-Plain&#39;&gt;inc&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
-  &lt;span class=&#39;c1&#39;&gt;# Blog Information&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;title&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;        &lt;span class=&#39;s&#39;&gt;&amp;quot;Jekyll&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;Incorporated&amp;quot;&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;subtitle&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;     &lt;span class=&#39;s&#39;&gt;&amp;quot;Modern&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;Jekyll&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;based&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;blog&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;for&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;companies&amp;quot;&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;cover_image&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;blog-cover.jpg&lt;/span&gt;
-  
-  &lt;span class=&#39;c1&#39;&gt;# Company information&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;company&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;      &lt;span class=&#39;l-Scalar-Plain&#39;&gt;Incorporated&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;url&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;          &lt;span class=&#39;l-Scalar-Plain&#39;&gt;http://incorporated.sendtoinc.com/&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;facebook&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;     &lt;span class=&#39;l-Scalar-Plain&#39;&gt;sendtoinc&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;twitter&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;      &lt;span class=&#39;l-Scalar-Plain&#39;&gt;sendtoinc&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;about_link&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;   &lt;span class=&#39;l-Scalar-Plain&#39;&gt;https://sendtoinc.com/about/&lt;/span&gt;
-  
-  &lt;span class=&#39;c1&#39;&gt;# Product Information&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;product_link&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;l-Scalar-Plain&#39;&gt;http://incorporated.sendtoinc.com/&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;tagline&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;      &lt;span class=&#39;s&#39;&gt;&amp;quot;Get&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;a&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;modern&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;blog&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;for&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;your&lt;/span&gt;&lt;span class=&#39;nv&#39;&gt; &lt;/span&gt;&lt;span class=&#39;s&#39;&gt;company&amp;quot;&lt;/span&gt;
-  
-  &lt;span class=&#39;c1&#39;&gt;# Comments&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;disqus&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
-    &lt;span class=&#39;c1&#39;&gt;# Eg. &amp;quot;exampleblog&amp;quot; Set to false to disable comments&lt;/span&gt;
-    &lt;span class=&#39;l-Scalar-Plain&#39;&gt;shortname&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;false&lt;/span&gt;
-  
-  
-  &lt;span class=&#39;c1&#39;&gt;# Sharing settings&lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;sharing&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
-    &lt;span class=&#39;l-Scalar-Plain&#39;&gt;twitter&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;    &lt;span class=&#39;l-Scalar-Plain&#39;&gt;false&lt;/span&gt;
-    &lt;span class=&#39;l-Scalar-Plain&#39;&gt;facebook&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;   &lt;span class=&#39;l-Scalar-Plain&#39;&gt;false&lt;/span&gt;
-    &lt;span class=&#39;l-Scalar-Plain&#39;&gt;gplus&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;      &lt;span class=&#39;l-Scalar-Plain&#39;&gt;false&lt;/span&gt;
-    &lt;span class=&#39;l-Scalar-Plain&#39;&gt;hn&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;         &lt;span class=&#39;l-Scalar-Plain&#39;&gt;false&lt;/span&gt;
-    
-  
- &lt;span class=&#39;c1&#39;&gt;# Analytics     &lt;/span&gt;
-  &lt;span class=&#39;l-Scalar-Plain&#39;&gt;analytics&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;
-    &lt;span class=&#39;l-Scalar-Plain&#39;&gt;google&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt; 
-      &lt;span class=&#39;c1&#39;&gt;# eg. &amp;#39;UA-123-12&amp;#39;&lt;/span&gt;
-      &lt;span class=&#39;l-Scalar-Plain&#39;&gt;id&lt;/span&gt;&lt;span class=&#39;p-Indicator&#39;&gt;:&lt;/span&gt;       &lt;span class=&#39;l-Scalar-Plain&#39;&gt;false&lt;/span&gt;    
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Zoomable images&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#39;full zoomable&#39;&gt;&lt;img src=&#39;/images/incorporated.jpg&#39; /&gt;&lt;/div&gt;
-&lt;p&gt;&lt;strong&gt;Awesome quotes&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;“Effective companies tend to communicate more, their people are curious and they have opinions”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Stay tuned for updates.&lt;/p&gt;</description>
-    </item>
-    
     
     
     <item>
@@ -139,6 +44,53 @@
 &lt;p&gt;Check the details &lt;a href=&quot;http://scn.sap.com/docs/DOC-49170&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Thanks for visiting &lt;a href=&quot;http://kpavan.com/myblog&quot;&gt;my blog&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    
+    
+    <item>
+      <title>Issues i faced while installing Jekyll blog for GitHub</title>
+      <link>http://kpavan.com/how-to/2014/02/20/pavan-new-post/</link>
+      <pubDate>Thu, 20 Feb 2014 21:48:26 +0000</pubDate>
+      <author></author>
+      <guid>http://kpavan.com/how-to/2014/02/20/pavan-new-post</guid>
+      <description>&lt;p&gt;&lt;img src=&quot;http://kpavan.com/blog/assets/jekyll.png&quot; alt=&quot;My helpful screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So far I meant blogging means Wordpress or blogspot which provides easy to use user interfaces, blog posts, edits and you can provide keywords and you can optimize your blog for SEO. Still i run couple of sites using wordpress though.&lt;/p&gt;
+
+&lt;p&gt;ever since I found Github Pages and Git blog using Jekyll I really wanted to implement my own Github Page and Blog with Jekyll.&lt;/p&gt;
+
+&lt;p&gt;There are lot of sites showing how easily you can implement Github blog with Jekyll, but i ran into some issue while implemnting this Jekyll blog, but i finally made one blog on Github.&lt;/p&gt;
+
+&lt;p&gt;How to implement Jekyll blog is easily demonstrated &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you ran into any issues while implementing Jekyll blog like me, then this post might sounds interesting for you&lt;/p&gt;
+
+&lt;p&gt;Here are the issues i faced and how i solved&lt;/p&gt;
+
+&lt;p&gt;Issue 1: first check &lt;code&gt;ruby -v&lt;/code&gt; Issue the command &lt;code&gt;gem install jekyll&lt;/code&gt; after a while I got this error message&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;ruby&#39;&gt;&lt;span class=&#39;ss&#39;&gt;ERROR&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;:&lt;/span&gt;  &lt;span class=&#39;no&#39;&gt;While&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;executing&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;gem&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt; &lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;no&#39;&gt;Gem&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;::&lt;/span&gt;&lt;span class=&#39;no&#39;&gt;FilePermissionError&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;
+    &lt;span class=&#39;no&#39;&gt;You&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;don&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;t&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;have&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;write&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;permissions&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;for&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;the&lt;/span&gt; &lt;span class=&#39;sr&#39;&gt;/Library/&lt;/span&gt;&lt;span class=&#39;no&#39;&gt;Ruby&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;/&lt;/span&gt;&lt;span class=&#39;no&#39;&gt;Gems&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;/&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;2&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;directory&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This means you dont have your own local copy of &lt;code&gt;ruby&lt;/code&gt;, by default every mac will come with pre-installed ruby for its own internal purpose. to come over this you can install your own ruby enviornment using RVM, there is another way using rbenv, but myself i prefer to use &lt;a href=&quot;https://rvm.io/&quot;&gt;this&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;once you install &lt;code&gt;ruby&lt;/code&gt;, then you can continue with your installation.&lt;/p&gt;
+
+&lt;p&gt;Issue 2: At the of installation, I got this message&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;ruby&#39;&gt;  &lt;span class=&#39;o&#39;&gt;*&lt;/span&gt; &lt;span class=&#39;ss&#39;&gt;WARNING&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;no&#39;&gt;You&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;have&lt;/span&gt; &lt;span class=&#39;s1&#39;&gt;&amp;#39;~/.profile&amp;#39;&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;file&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;you&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;might&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;want&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;to&lt;/span&gt; &lt;span class=&#39;nb&#39;&gt;load&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;it&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;,&lt;/span&gt;
+    &lt;span class=&#39;n&#39;&gt;to&lt;/span&gt; &lt;span class=&#39;k&#39;&gt;do&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;that&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;add&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;the&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;following&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;line&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;to&lt;/span&gt; &lt;span class=&#39;s1&#39;&gt;&amp;#39;/Users/pavankothapalli/.bash_profile&amp;#39;&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;:&lt;/span&gt;
+
+      &lt;span class=&#39;n&#39;&gt;source&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;~&lt;/span&gt;&lt;span class=&#39;sr&#39;&gt;/.profile&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Thought this mac installation really driving me crazy, but it’s so simple. just update the .bash_profile file with &lt;code&gt;source ~/.profile&lt;/code&gt;. In this way every time console opens it will load the path parameters.&lt;/p&gt;
+
+&lt;p&gt;That’s all … your awesome blog is live.&lt;/p&gt;
+
+&lt;p&gt;Welcome to MyBlog!&lt;/p&gt;
+
+&lt;p&gt;Thanks for visiting &lt;a href=&quot;http://kpavan.com&quot;&gt;my blog&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;BookMark : /how-to/2014/02/20/pavan-new-post&lt;/p&gt;</description>
     </item>
     
     
