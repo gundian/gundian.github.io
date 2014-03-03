@@ -3,17 +3,17 @@
   <channel>
     <title></title>
     <link>http://kpavan.com</link>
-    <atom:link href="http://kpavan.com/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://kpavan.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Mon, 03 Mar 2014 23:43:29 +0000</pubDate>
-    <lastBuildDate>Mon, 03 Mar 2014 23:43:29 +0000</lastBuildDate>
+    <pubDate>Mon, 03 Mar 2014 23:45:38 +0000</pubDate>
+    <lastBuildDate>Mon, 03 Mar 2014 23:45:38 +0000</lastBuildDate>
 
     
     
     <item>
       <title>What you need to know about SMP 3.0, Roadmap for SAP Mobility.</title>
-      <link>http://kpavan.com/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/</link>
+      <link>http://kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/</link>
       <pubDate>Tue, 25 Feb 2014 20:05:26 +0000</pubDate>
       <author></author>
       <guid>http://kpavan.com/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp</guid>
@@ -50,7 +50,7 @@
     
     <item>
       <title>Issues i faced while installing Jekyll blog for GitHub</title>
-      <link>http://kpavan.com/how-to/2014/02/20/pavan-new-post/</link>
+      <link>http://kpavan.com/blog/how-to/2014/02/20/pavan-new-post/</link>
       <pubDate>Thu, 20 Feb 2014 21:48:26 +0000</pubDate>
       <author></author>
       <guid>http://kpavan.com/how-to/2014/02/20/pavan-new-post</guid>
@@ -97,7 +97,7 @@
     
     <item>
       <title>Jekyll Incorporated Features</title>
-      <link>http://kpavan.com/2013/10/08/incorporated/</link>
+      <link>http://kpavan.com/blog/2013/10/08/incorporated/</link>
       <pubDate>Tue, 08 Oct 2013 00:00:00 +0000</pubDate>
       <author></author>
       <guid>http://kpavan.com/2013/10/08/incorporated</guid>
