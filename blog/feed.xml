@@ -6,8 +6,8 @@
     <atom:link href="http://kpavan.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 04 Mar 2014 20:23:23 +0000</pubDate>
-    <lastBuildDate>Tue, 04 Mar 2014 20:23:23 +0000</lastBuildDate>
+    <pubDate>Tue, 04 Mar 2014 20:29:33 +0000</pubDate>
+    <lastBuildDate>Tue, 04 Mar 2014 20:29:33 +0000</lastBuildDate>
 
     
     
@@ -25,7 +25,7 @@
 
 &lt;p&gt;Now, with their recent release SMP 3.0, seems everything has been changed.&lt;/p&gt;
 
-&lt;p&gt;The Differences i see between SUP 2.2 , SMP 2.3 and SMP 3.0&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Differences i see between SUP 2.2 , SMP 2.3 and SMP 3.0&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;with &lt;code&gt;SMP 3.0&lt;/code&gt; release, there is no SCC &lt;code&gt;Sybase Control center&lt;/code&gt;, so we kind of lost of the features we used as a SCC Administrator.&lt;/li&gt;
@@ -41,7 +41,9 @@
 
 &lt;p&gt;&lt;img src=&quot;http://scn.sap.com/servlet/JiveServlet/downloadImage/327361/image046.png&quot; alt=&quot;Sample application using AppBuilder&quot; /&gt;&lt;/p&gt;
 
+&lt;blockquote&gt;
 &lt;p&gt;Check the details &lt;a href=&quot;http://scn.sap.com/docs/DOC-49170&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Thanks for visiting &lt;a href=&quot;http://kpavan.com/myblog&quot;&gt;my blog&lt;/a&gt;&lt;/p&gt;</description>
     </item>
