@@ -1,39 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://kpavan.com/</loc>
-  <lastmod>2014-03-04T20:29:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://kpavan.com/blog/</loc>
-  <lastmod>2014-03-04T20:29:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://kpavan.com/sencha/test/</loc>
-  <lastmod>2014-03-04T20:29:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/</loc>
-  <lastmod>2014-03-04T20:29:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://kpavan.com/blog/how-to/2014/02/20/pavan-new-post/</loc>
-  <lastmod>2014-03-04T20:29:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://kpavan.com/blog/2013/10/08/incorporated/</loc>
-  <lastmod>2014-03-04T20:29:50+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://kpavan.com/blog</loc>
+    <lastmod>2014-02-25T20:05:26Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/</loc>
+    <lastmod>2014-02-25T20:05:26Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/how-to/2014/02/20/pavan-new-post/</loc>
+    <lastmod>2014-02-20T21:48:26Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/2013/10/08/incorporated/</loc>
+    <lastmod>2013-10-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 </urlset>
