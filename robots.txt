@@ -1,4 +1,2 @@
-Sitemap: http://www.kpavan.com/sitemap.xml
-
-
 User-agent: *
+Disallow:
