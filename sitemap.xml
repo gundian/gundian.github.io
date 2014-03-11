@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   
+  <url>
+    <loc>http://kpavan.com/blog/sap/sap_fiori/2014/03/10/what-you-need-to-know-about-sap-fiori/</loc>
+    <lastmod>2014-03-10T23:39:26Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>  
   
   <url>
     <loc>http://kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/</loc>
