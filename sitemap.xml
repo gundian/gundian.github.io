@@ -2,9 +2,17 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://kpavan.com/blog</loc>
-    <lastmod>2014-02-25T20:05:26Z</lastmod>
+    <lastmod>2014-03-13T12:20:01Z</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://kpavan.com/blog/sap/sap_afaria/2014/03/13/IPH3011-IPH6021-error-in-afaria/</loc>
+    <lastmod>2014-03-13T12:20:01Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -12,7 +20,7 @@
     <lastmod>2014-03-10T23:39:26Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>  
+  </url>
   
   <url>
     <loc>http://kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/</loc>
