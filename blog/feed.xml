@@ -6,9 +6,40 @@
     <atom:link href="http://kpavan.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 11 Mar 2014 05:16:50 +0000</pubDate>
-    <lastBuildDate>Tue, 11 Mar 2014 05:16:50 +0000</lastBuildDate>
+    <pubDate>Thu, 13 Mar 2014 19:07:50 +0000</pubDate>
+    <lastBuildDate>Thu, 13 Mar 2014 19:07:50 +0000</lastBuildDate>
 
+    
+    
+    <item>
+      <title>IPH Errors in Afaria during iOS Device Provisioning</title>
+      <link>http://kpavan.com/blog/sap/sap_afaria/2014/03/13/IPH3011-IPH6021-error-in-afaria/</link>
+      <pubDate>Thu, 13 Mar 2014 12:20:01 +0000</pubDate>
+      <author></author>
+      <guid>http://kpavan.com/sap/sap_afaria/2014/03/13/IPH3011-IPH6021-error-in-afaria</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Error Message in Afaria Server log&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;scss&#39;&gt;&lt;span class=&#39;na&#39;&gt;IPH3011&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;iOS&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;[&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;-1009&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;]&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;The&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;Internet&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;connection&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;appears&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;to&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;be&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;offline&lt;/span&gt;
+&lt;span class=&#39;n&#39;&gt;IPH6021&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;MDM&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;app&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;Deployment&lt;/span&gt; &lt;span class=&#39;n&#39;&gt;Error&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;.:&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;n&#39;&gt;username&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you closely observe these two &lt;code&gt;IPH Errors&lt;/code&gt; will occur during the iOS Device provisioning in Afaria, looks both two different individual error messages, but in fact these two messages are for the same user / request.&lt;/p&gt;
+
+&lt;p&gt;READ ALSO: &lt;a href=&quot;http://www.kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/&quot;&gt;How to Develop SMP Apps using OData&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let’s go to details of IPH Errors&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;IPH3011: &lt;code&gt;iOS[-1009]&lt;/code&gt; The Internet connection appears to be offline.&lt;/p&gt;
+
+&lt;p&gt;This error message can be read as 2 different parts&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;IPH3011&lt;/code&gt; is Afaria Error Code 2. &lt;code&gt;iOS[-1009]&lt;/code&gt; is the iOS Standard Error Code, and here is the description from apple developer site. The Internet connection appears to be offline.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;you will see this error, When the request made to Afaria server from the iOS Device and using Wifi/VPN Profiles and network interruption occurs, we can troubleshoot with Enginerring team to make sure to check any packet loss during the communication or network interrupted for the iOS device we are trying to provision using Afaria.&lt;/p&gt;
+
+&lt;p&gt;Since &lt;code&gt;IPH3011&lt;/code&gt; error issued, immediately we will see &lt;code&gt;IPH6021&lt;/code&gt; error also, &lt;code&gt;App deployment error&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
+    
     
     
     <item>
