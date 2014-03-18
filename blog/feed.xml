@@ -6,8 +6,8 @@
     <atom:link href="http://kpavan.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Thu, 13 Mar 2014 19:07:50 +0000</pubDate>
-    <lastBuildDate>Thu, 13 Mar 2014 19:07:50 +0000</lastBuildDate>
+    <pubDate>Tue, 18 Mar 2014 01:26:46 +0000</pubDate>
+    <lastBuildDate>Tue, 18 Mar 2014 01:26:46 +0000</lastBuildDate>
 
     
     
@@ -32,10 +32,12 @@
 &lt;p&gt;This error message can be read as 2 different parts&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;IPH3011&lt;/code&gt; is Afaria Error Code 2. &lt;code&gt;iOS[-1009]&lt;/code&gt; is the iOS Standard Error Code, and here is the description from apple developer site. The Internet connection appears to be offline.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IPH3011&lt;/code&gt; is Afaria Error Code&lt;/li&gt;
+
+&lt;li&gt;&lt;code&gt;iOS[-1009]&lt;/code&gt; is the iOS Standard Error Code, and here is the description from apple developer site. The Internet connection appears to be offline.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;you will see this error, When the request made to Afaria server from the iOS Device and using Wifi/VPN Profiles and network interruption occurs, we can troubleshoot with Enginerring team to make sure to check any packet loss during the communication or network interrupted for the iOS device we are trying to provision using Afaria.&lt;/p&gt;
+&lt;p&gt;you will see this error, When the request made to Afaria server from the iOS Device and using Wifi/VPN Profiles and network interruption occurs, we can troubleshoot with Engineering or network team to make sure to check any packet loss during the communication or network interrupted for the iOS device we are trying to provision using Afaria.&lt;/p&gt;
 
 &lt;p&gt;Since &lt;code&gt;IPH3011&lt;/code&gt; error issued, immediately we will see &lt;code&gt;IPH6021&lt;/code&gt; error also, &lt;code&gt;App deployment error&lt;/code&gt;.&lt;/p&gt;</description>
     </item>
