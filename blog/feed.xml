@@ -6,9 +6,129 @@
     <atom:link href="http://kpavan.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Tue, 18 Mar 2014 01:30:19 +0000</pubDate>
-    <lastBuildDate>Tue, 18 Mar 2014 01:30:19 +0000</lastBuildDate>
+    <pubDate>Wed, 19 Mar 2014 13:22:15 +0000</pubDate>
+    <lastBuildDate>Wed, 19 Mar 2014 13:22:15 +0000</lastBuildDate>
 
+    
+    
+    <item>
+      <title>How to build HTML5 (Sencha, SAPUI5) Apps in SAP Mobile Platform (SAP SMP)</title>
+      <link>http://kpavan.com/blog/sap/sap_smp/2014/03/18/How-to-develop-html5-apps-in-sap-sapui5-sencha-touch/</link>
+      <pubDate>Tue, 18 Mar 2014 18:22:43 +0000</pubDate>
+      <author></author>
+      <guid>http://kpavan.com/sap/sap_smp/2014/03/18/How-to-develop-html5-apps-in-sap-sapui5-sencha-touch</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Want to Build a Mobile app using HTML5, CSS3 (Sencha, SAPUI5) technologies? This post will demonstrate how to&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this blog post, we will disuss about developing mobile Apps with Sencha, OData, SAP NW Gateway, SAP Mobile Platform and SAP Business Suite&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How SAP Odata work for HTML5 developemnt&lt;/strong&gt; &lt;img src=&quot;/images/sapnwgateway.png&quot; alt=&quot;What is SAP NW Gateway for SAP Mobile Platform&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For SAP Mobile app development using HTML5 in SMP, our main connection point is SAP OData services, We request for device registration / data usage using SAP NW Gateway servers which will use OData to fetch the data from SAP Business Suite.&lt;/p&gt;
+
+&lt;p&gt;For simplicity we will use SAP Provided &lt;a href=&quot;http://scn.sap.com/docs/DOC-31221&quot;&gt;SAP Netweaver Gateway Demo System&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tools / Technologies Used:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Sencha Touch 2.x&lt;/li&gt;
+
+&lt;li&gt;Apache Cordova&lt;/li&gt;
+
+&lt;li&gt;XCode&lt;/li&gt;
+
+&lt;li&gt;XAMPP&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;If you don’t have access to Sample Gateway Services, you can get it &lt;a href=&quot;http://scn.sap.com/docs/DOC-31221&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How SAP Mobile development with HTML5 works in action&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this section we will discuss about how this HTML5 app development in SAP Mobile world using OData and MVC Architecture really works. &lt;img src=&quot;/images/mvc.png&quot; alt=&quot;MVC Architecture in SAP Mobility&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;READ ALSO: &lt;a href=&quot;http://www.kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/&quot;&gt;What is SAP Mobile Platform&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In this example we will consider the Sales Order Service, now let’s take a deeper look and understand How the Service Document looks&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;scss&#39;&gt;&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;app&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:collection&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;sap&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:requires-filter&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;true&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;sap&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:content-version&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;1&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;href&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;SalesOrders&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;atom&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:title&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;SalesOrders&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;atom&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:title&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;sap&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:member-title&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;SalesOrder&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;sap&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:member-title&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;app&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt;:collection&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This service for Sales Orders will return the Sales orders via OData to the Sencha touch application.&lt;/p&gt;
+
+&lt;p&gt;Let’s go to metadata section of this service, and this is how it looks like&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;scss&#39;&gt;&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;SalesOrderID&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.String&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;NetSum&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.Decimal&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Tax&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.Decimal&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Currency&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.String&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;ChangedAt&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.DateTime&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Note&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.String&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;CreatedAt&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.DateTime&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;TotalSum&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.Decimal&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Status&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.String&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;CustomerName&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.String&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&#39;o&#39;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;Property&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Name&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;BusinessPartnerID&amp;quot;&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;Type&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;=&lt;/span&gt;&lt;span class=&#39;s2&#39;&gt;&amp;quot;Edm.String&amp;quot;&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class=&#39;o&#39;&gt;**&lt;/span&gt; &lt;span class=&#39;err&#39;&gt;`&lt;/span&gt;&lt;span class=&#39;nt&#39;&gt;These&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;are&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;the&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;fileds&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;returned&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;to&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;the&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;web&lt;/span&gt; &lt;span class=&#39;nt&#39;&gt;service&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;`&lt;/span&gt; &lt;span class=&#39;o&#39;&gt;**&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Before you design your application you need to understand the metadata of the service, later we will use them in defining the Model. Since Sencha Touch / SAPUI5, uses MVC (Model-View-Controller) architecture, we need to design multiple Views (Example: one view for Sales Header another for Sales Item), Models, Controller(s).&lt;/p&gt;
+
+&lt;p&gt;In our Proof of Concept application, we have defined these Components&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Views:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Login view – User will enter Username and password&lt;/li&gt;
+
+&lt;li&gt;Selection View – Use Choice of selection&lt;/li&gt;
+
+&lt;li&gt;Order View – We will show the Sales Orders in the device&lt;/li&gt;
+
+&lt;li&gt;Sales Order Details View – Details of Sales Order (Line items, Material and Business Partner)&lt;/li&gt;
+
+&lt;li&gt;Sales Partner View – Display Sales Partner details&lt;/li&gt;
+
+&lt;li&gt;Material View – Display Material Details in the Sales Order&lt;/li&gt;
+
+&lt;li&gt;Graphical View – Display Charts using Sencha Touch GPL Version&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Models / Store:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Sales Header&lt;/li&gt;
+
+&lt;li&gt;Sales Item&lt;/li&gt;
+
+&lt;li&gt;Business Partner&lt;/li&gt;
+
+&lt;li&gt;Material Master&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Controller:&lt;/strong&gt; There are chances in large enterprise each view may be developed by different individuals, controllers may vary, or you can include in one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Proxy:&lt;/strong&gt; Sencha Touch provided SAP Connector which will use OData protocol to connect to your SAP NW Gateway Server, and this SAP Sencha OData Connector can be downloaded from &lt;a href=&quot;https://market.sencha.com/extensions/sencha-touch-odata-connector-for-sap&quot;&gt;Sencha Store&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let’s see the App in Action&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Login View&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sapmobility/sap_mobility1.png&quot; alt=&quot;SAP Login screen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Selection View&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sapmobility/sap_mobility2.png&quot; alt=&quot;SAP Sales order view&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Sales Order View&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sapmobility/sap_mobility3.png&quot; alt=&quot;SAP Sales order header view&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Graphical Analysis View&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/sapmobility/sap_mobility6.png&quot; alt=&quot;SAP Graphical view&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.kpavan.com/sencha/test/&quot;&gt;Click here for live demo in Action&lt;/a&gt;, If you want full source code, please contact me.&lt;/p&gt;</description>
+    </item>
+    
     
     
     <item>
