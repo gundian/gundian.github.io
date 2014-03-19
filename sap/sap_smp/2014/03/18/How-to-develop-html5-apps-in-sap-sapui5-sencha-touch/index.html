@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to build HTML5 (Sencha, SAPUI5) Apps in SAP Mobile Platform (SAP SMP) &mdash; Pavan Kothapalli</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/logo.png"/>
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Pavan Kothapalli" />
+    <meta name="title" content="How to build HTML5 (Sencha, SAPUI5) Apps in SAP Mobile Platform (SAP SMP) ">
+    <link rel="canonical" href="http://kpavan.com/blog/sap/sap_smp/2014/03/18/How-to-develop-html5-apps-in-sap-sapui5-sencha-touch/">
+     
+           
+    <meta property="og:title" content="How to build HTML5 (Sencha, SAPUI5) Apps in SAP Mobile Platform (SAP SMP) "/>
+    <meta property="og:url" content="http://kpavan.com/blog/sap/sap_smp/2014/03/18/How-to-develop-html5-apps-in-sap-sapui5-sencha-touch/"/>
+    
+    
+    <meta property="og:description" content="SAP Mobile app developement for beginners"/>
+    <meta name="description" content="SAP Mobile app developement for beginners"/>
+    
+    <meta name="keywords" content=" How to develop SAP Mobile apps, How to use OData in SAP, SMP for beginner, SAP SMP Proof of Concept, Learning material for SMP, SAP Mobile app demo, How to build sap apps using Sencha touch, What is SAPUI5, HTML5 apps for SAP, SAP Fiori HTML5 apps ">
+    
+    <meta property="og:site_name" content="Pavan Kothapalli">     
+</head>
+
+<body>
+    
+<section class="site-nav">
+    <header>
+        <nav id="navigation">
+            <a href="/">Home</a>
+            <a href="/blog/" class="home">Blog</a>
+            
+            
+        </nav>
+        
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                By <address><a rel="author" href="" title="Pavan Kothapalli" target="_blank">Pavan Kothapalli</a></address> &mdash;
+                <time pubdate datetime="2014-18-March" title="March 18, 2014">March 18, 2014</time>
+            </div>
+            <h1 class="title">How to build HTML5 (Sencha, SAPUI5) Apps in SAP Mobile Platform (SAP SMP)</h1>
+            <h2 class="subtitle">SAP Mobile app developement for beginners</h2>
+        </header>
+
+        <section>
+            <p><strong>Want to Build a Mobile app using HTML5, CSS3 (Sencha, SAPUI5) technologies? This post will demonstrate how to</strong></p>
+
+<p>In this blog post, we will disuss about developing mobile Apps with Sencha, OData, SAP NW Gateway, SAP Mobile Platform and SAP Business Suite</p>
+
+<p><strong>How SAP Odata work for HTML5 developemnt</strong> <img src="/blog/images/sapnwgateway.png" alt="What is SAP NW Gateway for SAP Mobile Platform" /></p>
+
+<p>For SAP Mobile app development using HTML5 in SMP, our main connection point is SAP OData services, We request for device registration / data usage using SAP NW Gateway servers which will use OData to fetch the data from SAP Business Suite.</p>
+
+<p>For simplicity we will use SAP Provided <a href="http://scn.sap.com/docs/DOC-31221">SAP Netweaver Gateway Demo System</a>.</p>
+
+<p><strong>Tools / Technologies Used:</strong></p>
+
+<ol>
+<li>Sencha Touch 2.x</li>
+
+<li>Apache Cordova</li>
+
+<li>XCode</li>
+
+<li>XAMPP</li>
+</ol>
+
+<p>If you don’t have access to Sample Gateway Services, you can get it <a href="http://scn.sap.com/docs/DOC-31221">here</a></p>
+
+<p><strong>How SAP Mobile development with HTML5 works in action</strong></p>
+
+<p>In this section we will discuss about how this HTML5 app development in SAP Mobile world using OData and MVC Architecture really works. <img src="/blog/images/mvc.png" alt="MVC Architecture in SAP Mobility" /></p>
+
+<p>READ ALSO: <a href="http://www.kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/">What is SAP Mobile Platform</a></p>
+
+<p>In this example we will consider the Sales Order Service, now let’s take a deeper look and understand How the Service Document looks</p>
+<div class='highlight'><pre><code class='scss'><span class='o'>&lt;</span><span class='nt'>app</span><span class='nd'>:collection</span> <span class='nt'>sap</span><span class='nd'>:requires-filter</span><span class='o'>=</span><span class='s2'>&quot;true&quot;</span> <span class='nt'>sap</span><span class='nd'>:content-version</span><span class='o'>=</span><span class='s2'>&quot;1&quot;</span> <span class='nt'>href</span><span class='o'>=</span><span class='s2'>&quot;SalesOrders&quot;</span><span class='o'>&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>atom</span><span class='nd'>:title</span> <span class='nt'>type</span><span class='o'>=</span><span class='s2'>&quot;text&quot;</span><span class='o'>&gt;</span><span class='nt'>SalesOrders</span><span class='o'>&lt;/</span><span class='nt'>atom</span><span class='nd'>:title</span><span class='o'>&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>sap</span><span class='nd'>:member-title</span><span class='o'>&gt;</span><span class='nt'>SalesOrder</span><span class='o'>&lt;/</span><span class='nt'>sap</span><span class='nd'>:member-title</span><span class='o'>&gt;</span>
+<span class='o'>&lt;/</span><span class='nt'>app</span><span class='nd'>:collection</span><span class='o'>&gt;</span>
+</code></pre></div>
+<p>This service for Sales Orders will return the Sales orders via OData to the Sencha touch application.</p>
+
+<p>Let’s go to metadata section of this service, and this is how it looks like</p>
+<div class='highlight'><pre><code class='scss'><span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;SalesOrderID&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.String&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;NetSum&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.Decimal&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;Tax&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.Decimal&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;Currency&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.String&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;ChangedAt&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.DateTime&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;Note&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.String&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;CreatedAt&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.DateTime&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;TotalSum&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.Decimal&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;Status&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.String&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;CustomerName&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.String&quot;</span> <span class='o'>/&gt;</span>
+<span class='o'>&lt;</span><span class='nt'>Property</span> <span class='nt'>Name</span><span class='o'>=</span><span class='s2'>&quot;BusinessPartnerID&quot;</span> <span class='nt'>Type</span><span class='o'>=</span><span class='s2'>&quot;Edm.String&quot;</span> <span class='o'>/&gt;</span>
+
+<span class='o'>**</span> <span class='err'>`</span><span class='nt'>These</span> <span class='nt'>are</span> <span class='nt'>the</span> <span class='nt'>fileds</span> <span class='nt'>returned</span> <span class='nt'>to</span> <span class='nt'>the</span> <span class='nt'>web</span> <span class='nt'>service</span><span class='err'>`</span> <span class='o'>**</span>
+</code></pre></div>
+<p>Before you design your application you need to understand the metadata of the service, later we will use them in defining the Model. Since Sencha Touch / SAPUI5, uses MVC (Model-View-Controller) architecture, we need to design multiple Views (Example: one view for Sales Header another for Sales Item), Models, Controller(s).</p>
+
+<p>In our Proof of Concept application, we have defined these Components</p>
+
+<p><strong>Views:</strong></p>
+
+<ol>
+<li>Login view – User will enter Username and password</li>
+
+<li>Selection View – Use Choice of selection</li>
+
+<li>Order View – We will show the Sales Orders in the device</li>
+
+<li>Sales Order Details View – Details of Sales Order (Line items, Material and Business Partner)</li>
+
+<li>Sales Partner View – Display Sales Partner details</li>
+
+<li>Material View – Display Material Details in the Sales Order</li>
+
+<li>Graphical View – Display Charts using Sencha Touch GPL Version</li>
+</ol>
+
+<p><strong>Models / Store:</strong></p>
+
+<ol>
+<li>Sales Header</li>
+
+<li>Sales Item</li>
+
+<li>Business Partner</li>
+
+<li>Material Master</li>
+</ol>
+
+<p><strong>Controller:</strong> There are chances in large enterprise each view may be developed by different individuals, controllers may vary, or you can include in one.</p>
+
+<p><strong>Proxy:</strong> Sencha Touch provided SAP Connector which will use OData protocol to connect to your SAP NW Gateway Server, and this SAP Sencha OData Connector can be downloaded from <a href="https://market.sencha.com/extensions/sencha-touch-odata-connector-for-sap">Sencha Store</a></p>
+
+<p><strong>Let’s see the App in Action</strong></p>
+
+<p><strong>1. Login View</strong></p>
+
+<p><img src="/blog/images/sapmobility/sap_mobility1.png" alt="SAP Login screen" /></p>
+
+<p><strong>2. Selection View</strong></p>
+
+<p><img src="/blog//images/sapmobility/sap_mobility2.png" alt="SAP Sales order view" /></p>
+
+<p><strong>3. Sales Order View</strong></p>
+
+<p><img src="/blog/images/sapmobility/sap_mobility3.png" alt="SAP Sales order header view" /></p>
+
+<p><strong>4. Graphical Analysis View</strong></p>
+
+<p><img src="/blog/images/sapmobility/sap_mobility6.png" alt="SAP Graphical view" /></p>
+
+<p><a href="http://www.kpavan.com/sencha/test/">Click here for live demo in Action</a>, If you want full source code, please contact me.</p>
+            
+<div class="social">
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button"  data-text="How to build HTML5 (Sencha, SAPUI5) Apps in SAP Mobile Platform (SAP SMP)" data-related="pawanchowdary">Tweet</a>
+    </div>
+    
+    
+    <div>
+        <div class="fb-like" data-width="150" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+    </div>
+    
+    
+    <div>
+        <div class="g-plusone" data-size="medium"></div>
+    </div>
+    
+    
+    
+</div>
+
+        </section>
+
+        <footer>
+            <address>
+               
+                <p>Written by <strong><a rel="author" href="https://twitter.com/" title="" target="_blank">Pavan Kothapalli</a></strong><br>
+                <span class="muted"></span>
+                </p>
+            </address>
+
+        </footer>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kpavan'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2014 
+        
+        <nav>
+            <a href="http://kpavan.com/">kpavan</a> &middot;
+            <a href="/blog/">Blog</a> &middot;
+            
+            
+        </nav>
+        
+        <nav class="social">
+            
+            <a href="https://twitter.com/pawanchowdary" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/pawanchow" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+                
+            <a href="/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+        <!--<p>Incorporated theme by <a href="https://sendtoinc.com">Inc</a></p>-->
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/assets/main.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=253595308025739";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+  <!--google analytics tracking code here-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48295105-1', 'kpavan.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>

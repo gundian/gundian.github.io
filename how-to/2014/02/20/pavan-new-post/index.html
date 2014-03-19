@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issues i faced while installing Jekyll blog for GitHub &mdash; Pavan Kothapalli</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/logo.png"/>
+    <link href="/feed.xml" rel="alternate" type="application/rss+xml" title="Pavan Kothapalli" />
+    <meta name="title" content="Issues i faced while installing Jekyll blog for GitHub ">
+    <link rel="canonical" href="http://kpavan.com/blog/how-to/2014/02/20/pavan-new-post/">
+     
+           
+    <meta property="og:title" content="Issues i faced while installing Jekyll blog for GitHub "/>
+    <meta property="og:url" content="http://kpavan.com/blog/how-to/2014/02/20/pavan-new-post/"/>
+    
+    
+    <meta property="og:description" content="Jekyll blog in easy steps"/>
+    <meta name="description" content="Jekyll blog in easy steps"/>
+    
+    <meta name="keywords" content=" how to install jekyll blog, jekyll configuration for github ">
+    
+    <meta property="og:site_name" content="Pavan Kothapalli">     
+</head>
+
+<body>
+    
+<section class="site-nav">
+    <header>
+        <nav id="navigation">
+            <a href="/">Home</a>
+            <a href="/blog/" class="home">Blog</a>
+            
+            
+        </nav>
+        
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                By <address><a rel="author" href="" title="Pavan Kothapalli" target="_blank">Pavan Kothapalli</a></address> &mdash;
+                <time pubdate datetime="2014-20-February" title="February 20, 2014">February 20, 2014</time>
+            </div>
+            <h1 class="title">Issues i faced while installing Jekyll blog for GitHub</h1>
+            <h2 class="subtitle">Jekyll blog</h2>
+        </header>
+
+        <section>
+            <p><img src="http://kpavan.com/blog/assets/jekyll.png" alt="My helpful screenshot" /></p>
+
+<p>So far I meant blogging means Wordpress or blogspot which provides easy to use user interfaces, blog posts, edits and you can provide keywords and you can optimize your blog for SEO. Still i run couple of sites using wordpress though.</p>
+
+<p>ever since I found Github Pages and Git blog using Jekyll I really wanted to implement my own Github Page and Blog with Jekyll.</p>
+
+<p>There are lot of sites showing how easily you can implement Github blog with Jekyll, but i ran into some issue while implemnting this Jekyll blog, but i finally made one blog on Github.</p>
+
+<p>How to implement Jekyll blog is easily demonstrated <a href="http://jekyllrb.com/">here</a>.</p>
+
+<p>If you ran into any issues while implementing Jekyll blog like me, then this post might sounds interesting for you</p>
+
+<p>Here are the issues i faced and how i solved</p>
+
+<p>Issue 1: first check <code>ruby -v</code> Issue the command <code>gem install jekyll</code> after a while I got this error message</p>
+<div class='highlight'><pre><code class='ruby'><span class='ss'>ERROR</span><span class='p'>:</span>  <span class='no'>While</span> <span class='n'>executing</span> <span class='n'>gem</span> <span class='o'>.</span><span class='n'>.</span><span class='o'>.</span> <span class='p'>(</span><span class='no'>Gem</span><span class='o'>::</span><span class='no'>FilePermissionError</span><span class='p'>)</span>
+    <span class='no'>You</span> <span class='n'>don</span><span class='err'>&#39;</span><span class='n'>t</span> <span class='n'>have</span> <span class='n'>write</span> <span class='n'>permissions</span> <span class='k'>for</span> <span class='n'>the</span> <span class='sr'>/Library/</span><span class='no'>Ruby</span><span class='o'>/</span><span class='no'>Gems</span><span class='o'>/</span><span class='mi'>2</span><span class='o'>.</span><span class='mi'>0</span><span class='o'>.</span><span class='mi'>0</span> <span class='n'>directory</span><span class='o'>.</span>
+</code></pre></div>
+<p>This means you dont have your own local copy of <code>ruby</code>, by default every mac will come with pre-installed ruby for its own internal purpose. to come over this you can install your own ruby enviornment using RVM, there is another way using rbenv, but myself i prefer to use <a href="https://rvm.io/">this</a></p>
+
+<p>once you install <code>ruby</code>, then you can continue with your installation.</p>
+
+<p>Issue 2: At the of installation, I got this message</p>
+<div class='highlight'><pre><code class='ruby'>  <span class='o'>*</span> <span class='ss'>WARNING</span><span class='p'>:</span> <span class='no'>You</span> <span class='n'>have</span> <span class='s1'>&#39;~/.profile&#39;</span> <span class='n'>file</span><span class='p'>,</span> <span class='n'>you</span> <span class='n'>might</span> <span class='n'>want</span> <span class='n'>to</span> <span class='nb'>load</span> <span class='n'>it</span><span class='p'>,</span>
+    <span class='n'>to</span> <span class='k'>do</span> <span class='n'>that</span> <span class='n'>add</span> <span class='n'>the</span> <span class='n'>following</span> <span class='n'>line</span> <span class='n'>to</span> <span class='s1'>&#39;/Users/pavankothapalli/.bash_profile&#39;</span><span class='p'>:</span>
+
+      <span class='n'>source</span> <span class='o'>~</span><span class='sr'>/.profile</span>
+</code></pre></div>
+<p>Thought this mac installation really driving me crazy, but it’s so simple. just update the .bash_profile file with <code>source ~/.profile</code>. In this way every time console opens it will load the path parameters.</p>
+
+<p>That’s all … your awesome blog is live.</p>
+
+<p>Welcome to MyBlog!</p>
+
+<p>Thanks for visiting <a href="http://kpavan.com">my blog</a></p>
+
+<p>BookMark : /how-to/2014/02/20/pavan-new-post</p>
+            
+<div class="social">
+    <div>
+        <a href="https://twitter.com/share" class="twitter-share-button"  data-text="Issues i faced while installing Jekyll blog for GitHub" data-related="pawanchowdary">Tweet</a>
+    </div>
+    
+    
+    <div>
+        <div class="fb-like" data-width="150" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+    </div>
+    
+    
+    <div>
+        <div class="g-plusone" data-size="medium"></div>
+    </div>
+    
+    
+    
+</div>
+
+        </section>
+
+        <footer>
+            <address>
+               
+                <p>Written by <strong><a rel="author" href="https://twitter.com/" title="" target="_blank">Pavan Kothapalli</a></strong><br>
+                <span class="muted"></span>
+                </p>
+            </address>
+
+        </footer>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'kpavan'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2014 
+        
+        <nav>
+            <a href="http://kpavan.com/">kpavan</a> &middot;
+            <a href="/blog/">Blog</a> &middot;
+            
+            
+        </nav>
+        
+        <nav class="social">
+            
+            <a href="https://twitter.com/pawanchowdary" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/pawanchow" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+                
+            <a href="/feed.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+        <!--<p>Incorporated theme by <a href="https://sendtoinc.com">Inc</a></p>-->
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="/assets/main.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=253595308025739";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+  <!--google analytics tracking code here-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48295105-1', 'kpavan.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
