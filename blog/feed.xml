@@ -6,8 +6,8 @@
     <atom:link href="http://kpavan.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <description></description>
     <language>en-us</language>
-    <pubDate>Wed, 19 Mar 2014 13:28:25 +0000</pubDate>
-    <lastBuildDate>Wed, 19 Mar 2014 13:28:25 +0000</lastBuildDate>
+    <pubDate>Wed, 19 Mar 2014 13:38:24 +0000</pubDate>
+    <lastBuildDate>Wed, 19 Mar 2014 13:38:24 +0000</lastBuildDate>
 
     
     
@@ -126,7 +126,11 @@
 
 &lt;p&gt;&lt;img src=&quot;/blog/images/sapmobility/sap_mobility6.png&quot; alt=&quot;SAP Graphical view&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.kpavan.com/sencha/test/&quot;&gt;Click here for live demo in Action&lt;/a&gt;, If you want full source code, please leave a comment here with your email ID.&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&quot;http://www.kpavan.com/sencha/test/&quot;&gt;Click here for live demo in Action&lt;/a&gt;, If you want full source code, please leave a comment here with your email ID.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Build Sencha web app into Native app&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Once we have our web app ready and tested, We can theme our web app to give native Look and feel UI, probably sencha touch is the easiest way to theme our Web Apps into Native look and feel. If you need more information how to Compile Web App into Native app, visit &lt;a href=&quot;http://docs.sencha.com/&quot;&gt;sencha&lt;/a&gt; docs.&lt;/p&gt;</description>
     </item>
     
     
