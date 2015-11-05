@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://kpavan.com/blog</loc>
+    <lastmod>2015-11-04T20:12:08Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://kpavan.com/blog/test/2015/11/04/how-to-test-my-memory/</loc>
+    <lastmod>2015-11-04T20:12:08Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/sap/sap_smp/2014/03/18/How-to-develop-html5-apps-in-sap-sapui5-sencha-touch/</loc>
+    <lastmod>2014-03-18T23:12:08Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/sap/sap_afaria/2014/03/13/IPH3011-IPH6021-error-in-afaria/</loc>
+    <lastmod>2014-03-13T12:20:01Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/sap/sap_fiori/2014/03/10/what-you-need-to-know-about-sap-fiori/</loc>
+    <lastmod>2014-03-10T23:39:26Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/how-to/sap_smp/sap_sup/sap/2014/02/25/what-you-need-to-know-about-sup-and-smp/</loc>
+    <lastmod>2014-02-25T20:05:26Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/how-to/2014/02/20/pavan-new-post/</loc>
+    <lastmod>2014-02-20T21:48:26Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://kpavan.com/blog/2013/10/08/incorporated/</loc>
+    <lastmod>2013-10-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</urlset>
